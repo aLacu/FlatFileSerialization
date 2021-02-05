@@ -22,7 +22,7 @@ import static org.junit.Assert.assertEquals;
 public class AppTest
 {
 
-    private static final long size=1000;
+    private static long size=1000;
 
     private static final File path=new File("fake-database.txt");
 
@@ -72,9 +72,17 @@ public class AppTest
                     .build()
                     .readWithKeyChange()
                     .count();
-            assertEquals("Error reading file with keychange", (int)Math.floor(Math.sqrt(size*2)), count);
+            assertEquals("Error reading file with keychange", (int)Math.round(Math.sqrt(size*2)), count);
         } catch (IOException e) {
             e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void readKeyChangeMassive(){
+        for(int i=10; i<1000; i++){
+            size=i;
+            readKeyChange();
         }
     }
 }

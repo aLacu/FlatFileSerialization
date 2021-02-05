@@ -4,8 +4,8 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class StatefulSupplier {
 
-    private static AtomicInteger counter=new AtomicInteger(0);
-    private static AtomicInteger internCounter=new AtomicInteger(0);
+    private final AtomicInteger counter=new AtomicInteger(0);
+    private final AtomicInteger internCounter=new AtomicInteger(0);
 
     public SampleObject supply(){
         int i1 = internCounter.incrementAndGet();
