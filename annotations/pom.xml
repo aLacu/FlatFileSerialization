@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
 
 
-  <groupId>alacu</groupId>
+  <groupId>it.alacu</groupId>
   <version>1.0.1</version>
   <artifactId>FlatFileSerialization</artifactId>
 
