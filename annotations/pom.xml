@@ -9,6 +9,21 @@
   <version>1.0.1</version>
   <artifactId>FlatFileSerialization</artifactId>
 
+  <url>https://github.com/aLacu/FlatFileSerialization</url>
+  <developers>
+    <developer>
+      <name>Alessandro Lacu</name>
+      <email>lacu.alessandro@gmail.com</email>
+    </developer>
+  </developers>
+  <licenses>
+    <license>
+      <name>MIT License</name>
+      <url>http://www.opensource.org/licenses/mit-license.php</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
 
   <dependencies>
     <dependency>
